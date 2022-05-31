@@ -1,0 +1,37 @@
+@use "../abstracts/variables";
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: califbFont;
+
+  &__header {
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 92px 40px 60px 40px;
+    max-width: 1150px;
+  }
+
+  &__subsentence {
+    max-width: 650px;
+    text-align: center;
+    padding: 40px 40px 0px 40px;
+    color: variables.$gray;
+  }
+
+  &__subsentence-author {
+    text-align: center;
+    color: variables.$gray;
+    margin-top: -10px;
+    margin-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    &__header {
+      font-size: 2rem;
+    }
+  }
+}

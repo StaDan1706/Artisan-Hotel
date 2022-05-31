@@ -1,0 +1,19 @@
+// COLORS
+
+$dirt-white: #fafafa;
+$white: #ffffff;
+$black: #000000;
+$gray: #616161;
+$tinted-translucent-gray: #8f8f87cc;
+
+// FONTS
+
+@font-face {
+  font-family: gothamFont;
+  src: url("/src/styles/fonts/gotham-rounded-medium.otf");
+}
+
+@font-face {
+  font-family: califbFont;
+  src: url("/src/styles/fonts/CALIFB.TTF");
+}

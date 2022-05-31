@@ -1,0 +1,42 @@
+@use "../abstracts/variables";
+
+.home {
+  position: relative;
+
+  &__logo-img {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+  }
+  &__background-img {
+    max-width: 1920px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 30px;
+    color: variables.$white;
+    font-size: 30px;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    &__logo-img {
+      margin: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+    }
+
+    &__icon {
+      display: none !important;
+    }
+  }
+}

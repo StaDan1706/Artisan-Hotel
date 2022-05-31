@@ -1,0 +1,10 @@
+@use "../../node_modules/bootstrap/scss/bootstrap.scss";
+@use "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+// IMPORTING THE SECTIONS
+@use "sections/reset";
+@use "sections/header";
+@use "sections/navbar";
+@use "sections/title";
+@use "sections/main";
+@use "sections/footer";

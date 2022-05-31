@@ -1,0 +1,94 @@
+@use "../abstracts/variables";
+
+.nav-list {
+  position: relative;
+  font-size: 1.5rem;
+
+  &__item {
+    padding: 15px;
+    list-style-type: none;
+  }
+
+  &__link {
+    color: variables.$gray;
+    padding: 10px;
+    text-decoration: none;
+
+    &:hover {
+      color: variables.$black;
+    }
+  }
+}
+
+.hamburger {
+  &__button {
+    z-index: 10;
+    right: 30px;
+    top: 30px;
+    background: variables.$tinted-translucent-gray;
+    border: none;
+    outline: none;
+    display: none;
+  }
+
+  &__line {
+    position: relative;
+    width: 4rem;
+    height: 0.5rem;
+    background: variables.$white;
+    margin: 0.8rem;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-list {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    background-color: variables.$tinted-translucent-gray;
+
+    &__link {
+      color: variables.$dirt-white;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    &--mobile-active {
+      visibility: visible;
+    }
+  }
+
+  .hamburger {
+    &__button {
+      position: fixed;
+      display: block;
+    }
+
+    &--active .hamburger__line {
+      &:first-child {
+        transform: translateY(-300px);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(-400deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-320deg) translateY(-10px) translateX(-8px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .nav-list {
+    width: 100%;
+  }
+}
