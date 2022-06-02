@@ -9,10 +9,10 @@ import firstRightImg from "./assets/first-right-img.png";
 import secondRightImg from "./assets/second-right-img.png";
 import thirdRightImg from "./assets/third-right-img.png";
 
-const background = document.getElementById("home__background-img");
+const background = document.getElementById("home-background-img");
 background.src = mainBackgroundImg;
 
-const headerLogo = document.getElementById("home__logo-img");
+const headerLogo = document.getElementById("home-logo-img");
 headerLogo.src = artisanLogoImg;
 
 const firstLeft = document.getElementById("first-left-img");
