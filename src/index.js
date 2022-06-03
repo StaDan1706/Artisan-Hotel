@@ -1,6 +1,6 @@
-import "./styles/main.scss";
 import "bootstrap/scss/bootstrap.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "./styles/main.scss";
 
 import "./assets/first-left-img.png";
 import "./assets/second-left-img.png";

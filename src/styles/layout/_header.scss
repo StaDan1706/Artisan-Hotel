@@ -1,5 +1,28 @@
 @use "../abstracts/variables";
 
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+
+  &:active,
+  &:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+  }
+}
+
 .home {
   position: relative;
 
@@ -20,6 +43,12 @@
     bottom: 30px;
     color: variables.$white;
     font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: variables.$white;
+    }
   }
   &__subtitle {
     font-size: 1.5rem;
@@ -36,7 +65,7 @@
     }
 
     &__icon {
-      display: none !important;
+      visibility: hidden;
     }
   }
 }
