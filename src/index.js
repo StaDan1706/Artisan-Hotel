@@ -1,5 +1,6 @@
-require("./styles/main.scss");
-
+import "./styles/main.scss";
+import "bootstrap/scss/bootstrap.scss";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import "./assets/first-left-img.png";
 import "./assets/second-left-img.png";
@@ -10,7 +11,6 @@ import "./assets/second-right-img.png";
 import "./assets/third-right-img.png";
 import "./assets/main.png";
 import "./assets/logo.svg";
-
 
 window.addEventListener("DOMContentLoaded", (event) => {
   const mobileNav = document.querySelector(".nav-list");
