@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const BundleAnalyzerPlugin =
-  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
@@ -9,9 +8,10 @@ module.exports = {
     bundle: path.resolve(__dirname, "src/index.js"),
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
     filename: "[name][contenthash].js",
+
     clean: true,
+    path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "[name][ext]",
   },
   devtool: "source-map",
@@ -28,9 +28,17 @@ module.exports = {
   },
   module: {
     rules: [
+      { test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          {
+            loader: "postcss-loader",
+          },
+          "sass-loader",
+        ],
       },
       {
         test: /\js$/,
@@ -43,12 +51,23 @@ module.exports = {
         },
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
+        test: /\.(woff|woff2|eot|ttf|TTF|otf)$/i,
+        generator: {
+          filename: "fonts/[name][ext]",
+        },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets/",
+              publicPath: "assets/",
+            },
+          },
+        ],
       },
     ],
   },
@@ -58,6 +77,6 @@ module.exports = {
       filename: "index.html",
       template: "src/template.html",
     }),
-    new BundleAnalyzerPlugin(),
+    new MiniCssExtractPlugin(),
   ],
 };

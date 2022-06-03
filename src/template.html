@@ -9,206 +9,207 @@
 </head>
 
 <body>
+  <a href="#tresc" class="sr-only">Przejdź do treści</a>
 
   <header class="home d-flex">
     <a href="#" class="home__logo">
-      <img class="home__logo-img" id="home__logo-img" alt="Artisan Logo" />
+      <img class="home__logo-img" src="./assets/logo.svg" alt="Artisan Logo" />
     </a>
-    <img id="home__background-img" class="home__background-img img-fluid w-100 mx-auto p-md-5" alt="Backgroung sea" />
+    <img src="./assets/main.png" class="home__background-img img-fluid w-100 mx-auto p-md-5" alt="Backgroung sea" />
 
-    <i class="bi bi-chevron-double-down d-flex flex-column align-items-center justify-content-center home__icon">
+    <a href="#main"
+      class="bi bi-chevron-double-down d-flex flex-column align-items-center justify-content-center home__icon">
       <p class="home__subtitle">Scroll Down</p>
-    </i>
-
+    </a>
   </header>
 
-  <nav class="nav d-flex justify-content-center">
-    <ul class="nav-list d-flex justify-content-center">
-      <li class="nav-list__item">
-        <a class="nav-list__link" href="#">About us</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__link" href="#">Communities</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__link" href="#">Homes for sale</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__link" href="#">Custom Built On Any Lot</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__link" href="#">Gallery</a>
-      </li>
-      <li class="nav-list__item">
-        <a class="nav-list__link" href="#">Connect</a>
-      </li>
-    </ul>
+  <section id="nawigacja">
+    <nav class="nav d-flex justify-content-center">
+      <ul class="nav-list d-flex justify-content-center">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">About us</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Communities</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Homes for sale</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Custom Built On Any Lot</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Gallery</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Connect</a>
+        </li>
+      </ul>
 
-    <a href="#" class="hamburger">
-      <button class="hamburger__button">
-        <div class="hamburger__line"></div>
-        <div class="hamburger__line"></div>
-        <div class="hamburger__line"></div>
-      </button>
-    </a>
+      <a href="#" class="hamburger">
+        <button class="hamburger__button">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </button>
+      </a>
+    </nav>
+    <section>
 
-  </nav>
+      <section id="tytuł" class="title bg-white d-flex flex-column">
+        <h1 class="title__header">
+          Custom Designed and Built, Energy Efficient Homes in Jacksonville, St.
+          Augustine and Amelia Island Florida...
+        </h1>
+        <p class="title__subsentence bg-white">
+          "Where we love is home Home that our feet may leave, but not our heart."
+          <p class="title__subsentence-author">Oliver Wendell Holmes</p>
+        </p>
+      </section>
 
-  <section class="title bg-white d-flex flex-column">
-    <h1 class="title__header">
-      Custom Designed and Built, Energy Efficient Homes in Jacksonville, St.
-      Augustine and Amelia Island Florida...
-    </h1>
-    <p class="title__subsentence bg-white">
-      "Where we love is home Home that our feet may leave, but not our heart."
-      <p class="title__subsentence-author">Oliver Wendell Holmes</p>
-    </p>
-  </section>
+      <section id="main" class="main container">
 
-  <section class="main container">
-    <div class="main__row row">
-      <div class="main__column main__column--left col-12 col-md-6">
-        <img id="first-left-img" class="main__img img-fluid" alt="palm" />
-        <div class="main__text-box">
-          <h1 class="main__header">Timeless designs</h1>
-          <p class="main__subtitle">
-            <p class="main__paragraph">
-              Modern innovations with a focus on functional floor plans, family
-              friendly open living and dramatic curb appeal drives us throughout
-              the entire home design and building process.
-            </p>
-            <p class="main__paragraph">
-              Artisan Homes offers extensive selections of flooring, fixtures,
-              trim and cabinetry that provide your family the opportunity to
-              customize a home based on your personal lifestyle and preferences.
-            </p>
-          </p>
+        <div class="main__row row">
+          <div class="main__column main__column--left col-12 col-md-6">
+            <img src="./assets/first-left-img.png" class="main__img img-fluid" alt="palm" />
+            <article class="main__text-box">
+              <h1 class="main__header">Timeless designs</h1>
+              <div class="main__subtitle">
+                <p class="main__paragraph">
+                  Modern innovations with a focus on functional floor plans, family
+                  friendly open living and dramatic curb appeal drives us throughout
+                  the entire home design and building process.
+                </p>
+                <p class="main__paragraph">
+                  Artisan Homes offers extensive selections of flooring, fixtures,
+                  trim and cabinetry that provide your family the opportunity to
+                  customize a home based on your personal lifestyle and preferences.
+                </p>
+              </div>
+            </article>
+
+            <img src="./assets/second-left-img.png" class="main__img img-fluid" alt="Island" />
+
+            <article class="main__text-box">
+              <header class="main__header">
+                Custom Designed and Built Artisan Homes in Jacksonville, Florida
+              </header>
+              <p class="main__subtitle">
+                <a class="main__link" href="#">Learn more</a>
+              </p>
+            </article>
+
+            <img src="./assets/third-left-img.png" class="main__img img-fluid" alt="home" />
+
+            <article class="main__text-box">
+              <header class="main__header">
+                Custom Designed and Built Artisan Homes in Amelia Island, Florida
+              </header>
+              <p class="main__subtitle">
+                <a class="main__link" href="#">Learn more</a>
+              </p>
+            </article>
+
+            <img src="./assets/fourth-left-img.png" class="main__img img-fluid" alt="living room" />
+
+            <article class="main__text-box">
+              <header class="main__header">View Our Gallery of Homes</header>
+              <p class="main__subtitle">
+                <a class="main__link" href="#">Learn more</a>
+              </p>
+            </article>
+          </div>
+
+          <div class="main__column main__column--right col-12 col-md-6">
+            <article class="main__text-box">
+              <header class="main__header">Master Craftsman</header>
+              <div class="main__subtitle">
+                <p class="main__paragraph">
+                  Since 2003, Artisan Homes has been providing families in greater
+                  Jacksonville with design driven,expertly crafted custom homes of
+                  exceptional value. Quality, lifestyle and energy efficiency are
+                  core tenets of our business model.
+                </p>
+
+                <p class="main__paragraph">
+                  To ensure your families comfort and investment, our
+                  custom-craftedhomes are constructed using only the highest quality
+                  materials, modern features and expert oversight.
+                </p>
+              </div>
+            </article>
+
+            <img src="./assets/first-right-img.png" class="main__img img-fluid" alt="house" />
+
+            <article class="main__text-box">
+              <header class="main__header">Energy efficiency</header>
+
+              <div class="main__subtitle">
+                <p class="main__paragraph">
+                  Artisan Homes is committed to energy conservation and efficiency.
+                  We adhere to energy saving building standards and building
+                  techniques, featuring modern HVAC systems and appliances that use
+                  far less energy than technologies employed even 5 years ago.
+                </p>
+
+                <p class="main__paragraph">
+                  Artisan Homes can save your family up to $200 per month on the
+                  cost of utilities.
+                </p>
+              </div>
+            </article>
+
+            <img src="./assets/second-right-img.png" class="main__img img-fluid" alt="mainimg" />
+
+            <article class="main__text-box main__text-box--to-right">
+              <header class="main__header">
+                Custom Designed and Built Artisan Homes in St. Augustine, Florida
+              </header>
+              <p class="main__subtitle">
+                <a class="main__link" href="#">Learn more</a>
+              </p>
+            </article>
+
+            <img src="./assets/third-right-img.png" class="main__img img-fluid" alt="home" />
+
+            <article class="main__text-box main__text-box--to-right">
+              <header class="main__header">Homes for sale</header>
+              <p class="main__subtitle">
+                <a class="main__link" href="#">Learn more</a>
+              </p>
+            </article>
+
+          </div>
         </div>
+      </section>
 
-        <img id="second-left-img" class="main__img img-fluid" alt="Island" />
+      <section id="stopka" class="footer">
+        <article class="footer__element text-center d-flex justify-content-center">
+          <header class="footer__title">Let's get started today</header>
 
-        <div class="main__text-box">
-          <h1 class="main__header">
-            Custom Designed and Built Artisan Homes in Jacksonville, Florida
-          </h1>
-          <p class="main__subtitle">
-            <a class="main__link" href="#">Learn more</a>
+          <p class="footer__paragraph">
+            To arrange an appointment and “Experience the Artisan Homes
+            Difference”, contact the Jacksonville, St. Augustine and Amelia Island
+            Custom Home Building Experts:
           </p>
-        </div>
 
-        <img id="third-left-img" class="main__img img-fluid" alt="home" />
-
-        <div class="main__text-box">
-          <h1 class="main__header">
-            Custom Designed and Built Artisan Homes in Amelia Island, Florida
-          </h1>
-          <p class="main__subtitle">
-            <a class="main__link" href="#">Learn more</a>
+          <p class="footer__contact">
+            Call <a href="#" class="footer__contact--number">904.429.4800</a> or
+            Email
+            <a href="#" class="footer__contact--email">info@artisanhomebuilder.com</a>
           </p>
-        </div>
+        </article>
 
-        <img id="fourth-left-img" class="main__img img-fluid" alt="living room" />
-
-        <div class="main__text-box">
-          <h1 class="main__header">View Our Gallery of Homes</h1>
-          <p class="main__subtitle">
-            <a class="main__link" href="#">Learn more</a>
+        <article class="footer__element text-center bg-white p-4">
+          <p class="footer__subparagraph">
+            Artisan Homes - Custom Designed and Built, Energy Efficient Homes in
+            Jacksonville, St. Augustine and Amelia Island, or You Own Building
+            Lot. Call: 904.429.4800 or Email: info@artisanhomebuilder.com
+            CBC#1253969 ADD Equal Housing Opportunity Logo
           </p>
-        </div>
-      </div>
+        </article>
 
-      <div class="main__column main__column--right col-12 col-md-6">
-        <div class="main__text-box">
-          <h1 class="main__header">Master Craftsman</h1>
-          <p class="main__subtitle">
-            <p class="main__paragraph">
-              Since 2003, Artisan Homes has been providing families in greater
-              Jacksonville with design driven,expertly crafted custom homes of
-              exceptional value. Quality, lifestyle and energy efficiency are
-              core tenets of our business model.
-            </p>
-
-            <p class="main__paragraph">
-              To ensure your families comfort and investment, our
-              custom-craftedhomes are constructed using only the highest quality
-              materials, modern features and expert oversight.
-            </p>
-          </p>
-        </div>
-
-        <img id="first-right-img" class="main__img img-fluid" alt="house" />
-
-        <div class="main__text-box">
-          <h1 class="main__header">Energy efficiency</h1>
-
-          <p class="main__subtitle">
-            <p class="main__paragraph">
-              Artisan Homes is committed to energy conservation and efficiency.
-              We adhere to energy saving building standards and building
-              techniques, featuring modern HVAC systems and appliances that use
-              far less energy than technologies employed even 5 years ago.
-            </p>
-
-            <p class="main__paragraph">
-              Artisan Homes can save your family up to $200 per month on the
-              cost of utilities.
-            </p>
-          </p>
-        </div>
-
-        <img id="second-right-img" class="main__img img-fluid" alt="mainimg" />
-
-        <div class="main__text-box main__text-box--to-right">
-          <h1 class="main__header">
-            Custom Designed and Built Artisan Homes in St. Augustine, Florida
-          </h1>
-          <p class="main__subtitle">
-            <a class="main__link" href="#">Learn more</a>
-          </p>
-        </div>
-
-        <img id="third-right-img" class="main__img img-fluid" alt="home" />
-
-        <div class="main__text-box main__text-box--to-right">
-          <h1 class="main__header">Homes for sale</h1>
-          <p class="main__subtitle">
-            <a class="main__link" href="#">Learn more</a>
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="footer">
-    <div class="footer__element text-center d-flex justify-content-center">
-      <h1 class="footer__title">Let's get started today</h1>
-
-      <p class="footer__paragraph">
-        To arrange an appointment and “Experience the Artisan Homes
-        Difference”, contact the Jacksonville, St. Augustine and Amelia Island
-        Custom Home Building Experts:
-      </p>
-
-      <p class="footer__contact">
-        Call <a href="#" class="footer__contact--number">904.429.4800</a> or
-        Email
-        <a href="#" class="footer__contact--email">info@artisanhomebuilder.com</a>
-      </p>
-    </div>
-
-    <div class="footer__element text-center bg-white p-4">
-      <p class="footer__subparagraph">
-        Artisan Homes - Custom Designed and Built, Energy Efficient Homes in
-        Jacksonville, St. Augustine and Amelia Island, or You Own Building
-        Lot. Call: 904.429.4800 or Email: info@artisanhomebuilder.com
-        CBC#1253969 ADD Equal Housing Opportunity Logo
-      </p>
-    </div>
-
-  </section>
-
-  <script src="/src/index.js"></script>
+      </section>
 </body>
 
 </html>
